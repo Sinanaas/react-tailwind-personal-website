@@ -1,0 +1,14 @@
+.about-section {
+    background:
+            radial-gradient(circle, transparent 20%, #141414 20%, #141414 80%, transparent 80%, transparent),
+            radial-gradient(circle, transparent 20%, #141414 20%, #141414 80%, transparent 80%, transparent) 50px 50px,
+            linear-gradient(#24242D 4px, transparent 4px) 0 -2px,
+            linear-gradient(90deg, #24242D 4px, transparent 4px) -2px 0;
+            background-color: #141414;
+            background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+
+.about-section h1 {
+    text-shadow: -1px -1px 0 #FCF5E5, 1px -1px 0 #FCF5E5, -1px 1px 0 #FCF5E5, 1px 1px 0 #FCF5E5;
+    color: #141414;
+}
