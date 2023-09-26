@@ -8,10 +8,10 @@ const Topbar = () => {
   };
 
   return (
-    <nav className="w-full dark:bg-neutral-900 fixed px-8 mb-4 drop-shadow-md">
+    <nav className="w-full dark:bg-neutral-900 fixed px-8 md:py-2 mb-4 drop-shadow-lg">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center">
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-4xl">SINANAAS</span>
+          <span className="self-center md:text-4xl text-2xl font-semibold whitespace-nowrap dark:text-white">SINANAAS</span>
         </a>
         <button
           onClick={toggleMenu}

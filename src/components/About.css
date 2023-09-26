@@ -1,14 +1,10 @@
 .about-section {
-    background:
-            radial-gradient(circle, transparent 20%, #141414 20%, #141414 80%, transparent 80%, transparent),
-            radial-gradient(circle, transparent 20%, #141414 20%, #141414 80%, transparent 80%, transparent) 50px 50px,
-            linear-gradient(#24242D 4px, transparent 4px) 0 -2px,
-            linear-gradient(90deg, #24242D 4px, transparent 4px) -2px 0;
-            background-color: #141414;
-            background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
-}
-
-.about-section h1 {
-    text-shadow: -1px -1px 0 #FCF5E5, 1px -1px 0 #FCF5E5, -1px 1px 0 #FCF5E5, 1px 1px 0 #FCF5E5;
-    color: #141414;
+    --s: 56px; /* control the size */
+  
+    --_g: #2C2D2D 90deg,#24242D 0;
+    background: 
+      conic-gradient(from 90deg at 2px 2px,var(--_g))
+       0 0/var(--s) var(--s),
+      conic-gradient(from 90deg at 1px 1px,var(--_g))
+       0 0/calc(var(--s)/5) calc(var(--s)/5);
 }

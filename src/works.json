@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "imgSrc": "../assets/bagan.jpg",
+        "title": "HIMTI Instagram Post",
+        "desc": "This is a design for HIMTI official Instagram post of the new organizational hierarchy",
+        "link": "https://www.figma.com/file/fLjCwJSSczPvvOZcSvKOyX/Untitled?type=design&node-id=0%3A1&mode=design&t=k8piHOA7oCadoQOY-1"
+    },
+    {
+        "id": 2,
+        "imgSrc": "../assets/charon-library.png",
+        "title": "Library Application Mockup",
+        "desc": "This is a mockup design for my Database Technology assignment, where my friends and I developed a library application",
+        "link": "https://www.figma.com/file/I7kYtKstHVcelaxSab8LA8/Untitled?type=design&node-id=0%3A1&mode=design&t=Edc2nAfXoRDlb2za-1"
+    },
+    {
+        "id": 3,
+        "imgSrc": "../assets/dhimti.png",
+        "title": "HIMTI Bandung Instagram Post",
+        "desc": "This design is for an HIMTI Bandung Instagram post and a speaker certificate related to a technology talk show",
+        "link": "https://www.figma.com/file/Oaq6kwgFBBhRH85tF1woJS/Untitled?type=design&node-id=1%3A227&mode=design&t=4h2aoxzrDzKnLOmR-1"
+    },
+    {
+        "id": 4,
+        "imgSrc": "../assets/eid.png",
+        "title": "HIMTI Bandung Instagram Post (Eid Celebration)",
+        "desc": "This design is for an HIMTI Bandung Instagram post about Eid celebration",
+        "link": "https://www.canva.com/design/DAE_bEkgSRM/hlIsQz3e5Fcr4ftXyCGsnQ/edit?utm_content=DAE_bEkgSRM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    },
+    {
+        "id": 5,
+        "imgSrc": "../assets/himti1.jpg",
+        "title": "HIMTI Bandung Informative Instagram Post",
+        "desc": "This is a design for HIMTI Bandung informative Instagram post",
+        "link": "https://www.figma.com/file/zt09s26PlEyGdHnn5UE8gZ/Untitled?type=design&node-id=2%3A185&mode=design&t=eyDlx3VtuLFzkYjF-1"
+    },
+    {
+        "id": 6,
+        "imgSrc": "../assets/linguanesia.png",
+        "title": "Linguanesia App Mockup",
+        "desc": "This mockup mobile design is for the Linguanesia App, allowing users to translate sign language into text",
+        "link": "https://www.figma.com/file/TsOnXTDPXJ19Cm5aiRCsCS/Untitled?type=design&node-id=1%3A10187&mode=design&t=szjWVIdGDBvqyk02-1"
+    },
+    {
+        "id": 7,
+        "imgSrc": "../assets/koperasi.png",
+        "title": "Cooperative Mobile App Mockup",
+        "desc": "This partial mockup mobile design is for a cooperative mobile application for Mitra Kasih Hospital",
+        "link": "https://www.figma.com/file/OY46Qu0dMYWC9ikKjBTvuw/Untitled?type=design&node-id=0%3A1&mode=design&t=XAUwj29PgiYoXiEU-1"
+    },
+    {
+        "id": 8,
+        "imgSrc": "../assets/katekima.png",
+        "title": "KATEKIMA Project",
+        "desc": "This project is based on Laravel and was worked on by me and my friends for our Software Engineering assignment",
+        "link": "https://github.com/vincentalexx/KATEKIMA"
+    },
+    {
+        "id": 9,
+        "imgSrc": "../assets/oracle.png",
+        "title": "Oracle Apex Project",
+        "desc": "This project is based on Oracle Apex and was worked on by me and my friends for our Database Technology assignment",
+        "link": ""
+    },
+    {
+        "id": 10,
+        "imgSrc": "../assets/pepper-design.png",
+        "title": "White Pepper Design",
+        "desc": "This is a design about white pepper that my family wanted to sell in 2022",
+        "link": "https://www.figma.com/file/MKmcsshDwexoK31T58pozv/Untitled?type=design&node-id=0%3A1&mode=design&t=u4bPsQVZdPg0bsZN-1"
+    },
+    {
+        "id": 11,
+        "imgSrc": "../assets/qhealth.jpg",
+        "title": "QHealth Java Swing Project",
+        "desc": "This project is based on Java Swing and was worked on by me and my friends for our Object Oriented Programming assignment",
+        "link": "https://github.com/fzjourney/Basal-Metabolic-Counter.git"
+    },
+    {
+        "id": 12,
+        "imgSrc": "../assets/sign.jpg",
+        "title": "Sign Language Translation Python Project",
+        "desc": "This project is based on Python and was worked on by me and my friends for our Artificial Intelligence assignment",
+        "link": ""
+    }
+]
+
