@@ -31,9 +31,9 @@ export default function Contacts() {
 
   return (
     <div className="all-container dark:bg-neutral-800 text-amber-50 min-w-[100%] md:flex md:flex-col">
-      <div className="contacts-container flex py-28  min-w-[100%]">
-        <div className="left-container hidden md:block md:flex-end md:flex md:w-[50%] md:text-right md:items-center md:justify-end md:pr-16 md: ">
-          <h1 className='md:text-[90px] md:font-bold md:w-[60%]'>Send Me A Message</h1>
+      <div className="contacts-container flex flex-col md:flex-row py-28  min-w-[100%]">
+        <div className="left-container md:flex-end md:flex md:w-[50%] md:text-right md:items-center md:justify-end md:pr-16 md: ">
+          <h1 className='md:text-[90px] text-5xl font-bold md:font-bold md:w-[60%]'>Send Me A Message</h1>
         </div>
         <div className="hidden md:block line border-[1.5px] border-amber-50 rounded ">
 
@@ -54,7 +54,7 @@ export default function Contacts() {
             <textarea id="message" name="message" placeholder="What's on your mind" rows="8" required className='rounded p-2 dark:bg-neutral-800 border-amber-50 border-[1px] mt-2 w-[100%]'></textarea>
           </div>
           <div className="submit-container flex justify-center md:justify-start">
-            <button type='submit' className='bg-amber-50 text-neutral-800 px-4 font-semibold w-full md:w-44 rounded py-[4px]'>Submit</button>
+            <button type='submit' className='bg-amber-500 text-neutral-800 px-4 font-semibold w-full md:w-44 rounded py-[4px]'>Submit</button>
           </div>
         </div>
         </form>
@@ -73,10 +73,6 @@ export default function Contacts() {
           <li className='gap-2 flex items-center'>
             <FontAwesomeIcon icon={faGithub} id="git-icon" />
             <a href="https://github.com/Sinanaas" target='_blank'><span className="contact-text">Sinanaas</span></a>
-          </li>
-          <li className='gap-2 flex items-center'>
-            <FontAwesomeIcon icon={faInstagram} id="insta-icon" />
-            <a href="https://www.instagram.com/sinanaas/" target='_blank'><span className="contact-text">@sinanaas</span></a>
           </li>
           <li className='gap-2 flex items-center'>
             <FontAwesomeIcon icon={faLinkedin} id="linkedIn-icon" />

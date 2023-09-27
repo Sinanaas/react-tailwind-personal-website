@@ -3,85 +3,99 @@
         "id": 1,
         "imgSrc": "../assets/bagan.jpg",
         "title": "HIMTI Instagram Post",
-        "desc": "This is a design for HIMTI official Instagram post of the new organizational hierarchy",
+        "desc": "This is a design for HIMTI's official Instagram post showcasing the new organizational hierarchy. I used Figma to create this design with the theme of glass morphism.",
         "link": "https://www.figma.com/file/fLjCwJSSczPvvOZcSvKOyX/Untitled?type=design&node-id=0%3A1&mode=design&t=k8piHOA7oCadoQOY-1"
-    },
+    },    
     {
         "id": 2,
         "imgSrc": "../assets/charon-library.png",
         "title": "Library Application Mockup",
-        "desc": "This is a mockup design for my Database Technology assignment, where my friends and I developed a library application",
+        "desc": "This is a mobile mockup design that I created using Figma for my Database Technology assignment. My friends and I developed a library application using Oracle Database.",
         "link": "https://www.figma.com/file/I7kYtKstHVcelaxSab8LA8/Untitled?type=design&node-id=0%3A1&mode=design&t=Edc2nAfXoRDlb2za-1"
-    },
+    },    
     {
         "id": 3,
         "imgSrc": "../assets/dhimti.png",
-        "title": "HIMTI Bandung Instagram Post",
-        "desc": "This design is for an HIMTI Bandung Instagram post and a speaker certificate related to a technology talk show",
+        "title": "D'HIMTI Poster",
+        "desc": "This design is for an HIMTI Bandung Instagram post and a certificate related to a tech talk show. I created both the Instagram post and the certificate using Figma.",
         "link": "https://www.figma.com/file/Oaq6kwgFBBhRH85tF1woJS/Untitled?type=design&node-id=1%3A227&mode=design&t=4h2aoxzrDzKnLOmR-1"
     },
     {
         "id": 4,
         "imgSrc": "../assets/eid.png",
-        "title": "HIMTI Bandung Instagram Post (Eid Celebration)",
-        "desc": "This design is for an HIMTI Bandung Instagram post about Eid celebration",
+        "title": "HIMTI Eid Poster",
+        "desc": "This design is for an HIMTI Bandung Instagram post celebrating Eid. I created this minimalistic design using Figma to beautifully capture the essence of Eid, emphasizing its simplicity and elegance.",
         "link": "https://www.canva.com/design/DAE_bEkgSRM/hlIsQz3e5Fcr4ftXyCGsnQ/edit?utm_content=DAE_bEkgSRM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         "id": 5,
         "imgSrc": "../assets/himti1.jpg",
         "title": "HIMTI Bandung Informative Instagram Post",
-        "desc": "This is a design for HIMTI Bandung informative Instagram post",
+        "desc": "This is a design for HIMTI Bandung Instagram post about what to Do's and Don'ts when you are a self-taught programmer that I created using Figma",
         "link": "https://www.figma.com/file/zt09s26PlEyGdHnn5UE8gZ/Untitled?type=design&node-id=2%3A185&mode=design&t=eyDlx3VtuLFzkYjF-1"
     },
     {
         "id": 6,
         "imgSrc": "../assets/linguanesia.png",
         "title": "Linguanesia App Mockup",
-        "desc": "This mockup mobile design is for the Linguanesia App, allowing users to translate sign language into text",
+        "desc": "This mockup mobile design is for the Linguanesia App that allow users to translate sign language into text that I created using Figma",
         "link": "https://www.figma.com/file/TsOnXTDPXJ19Cm5aiRCsCS/Untitled?type=design&node-id=1%3A10187&mode=design&t=szjWVIdGDBvqyk02-1"
     },
     {
         "id": 7,
         "imgSrc": "../assets/koperasi.png",
         "title": "Cooperative Mobile App Mockup",
-        "desc": "This partial mockup mobile design is for a cooperative mobile application for Mitra Kasih Hospital",
+        "desc": "This partial mockup mobile design is for a cooperative mobile application for Mitra Kasih Hospital that I created using Figma",
         "link": "https://www.figma.com/file/OY46Qu0dMYWC9ikKjBTvuw/Untitled?type=design&node-id=0%3A1&mode=design&t=XAUwj29PgiYoXiEU-1"
     },
     {
         "id": 8,
         "imgSrc": "../assets/katekima.png",
         "title": "KATEKIMA Project",
-        "desc": "This project is based on Laravel and was worked on by me and my friends for our Software Engineering assignment",
+        "desc": "This project is based on Laravel Framwork and was worked on by me and my friends as part of our Software Engineering assignment, this project results in an A grade",
         "link": "https://github.com/vincentalexx/KATEKIMA"
     },
     {
         "id": 9,
         "imgSrc": "../assets/oracle.png",
         "title": "Oracle Apex Project",
-        "desc": "This project is based on Oracle Apex and was worked on by me and my friends for our Database Technology assignment",
+        "desc": "This project is based on Oracle Apex and was worked on by me and my friends for our Database Technology assignment. Unfortunately, I don't have a link to it because the Oracle application isn't stored in our local files.",
         "link": ""
     },
     {
         "id": 10,
         "imgSrc": "../assets/pepper-design.png",
-        "title": "White Pepper Design",
-        "desc": "This is a design about white pepper that my family wanted to sell in 2022",
+        "title": "Sulawesi White Pepper Design",
+        "desc": "This is a design I created using Figma back in 2022 for Sulawesi's white pepper, which my family intended to sell. This simplistic design features a pleasing color palette and a concise way to deliver its message.",
         "link": "https://www.figma.com/file/MKmcsshDwexoK31T58pozv/Untitled?type=design&node-id=0%3A1&mode=design&t=u4bPsQVZdPg0bsZN-1"
     },
     {
         "id": 11,
         "imgSrc": "../assets/qhealth.jpg",
         "title": "QHealth Java Swing Project",
-        "desc": "This project is based on Java Swing and was worked on by me and my friends for our Object Oriented Programming assignment",
+        "desc": "This project was developed using Java Swing and was worked on by me and my friends for our Object-Oriented Programming assignment. The application allows users to calculate their Basal Metabolic Rate (BMR) by inputting their weight, height, and age. It then provides the user with their BMR, calorie needs, and food recommendations based on their calorie requirements.",
         "link": "https://github.com/fzjourney/Basal-Metabolic-Counter.git"
     },
     {
         "id": 12,
         "imgSrc": "../assets/sign.jpg",
-        "title": "Sign Language Translation Python Project",
-        "desc": "This project is based on Python and was worked on by me and my friends for our Artificial Intelligence assignment",
+        "title": "Linguanesia Python Project",
+        "desc": "This project is based on Python and was developed by me and my friends as part of our Artificial Intelligence assignment. In this project, we utilized the MediaPipe library for hand detection and OpenCV2 for real-time image processing. For model training, we employed Google's Teachable Machine. While the model can accurately detect sign language gestures, it faces challenges when distinguishing sign language letters that closely resemble each other.",
         "link": ""
+    },
+    {
+        "id": 13,
+        "imgSrc": "../assets/carbon.png",
+        "title": "Pollution Index Map",
+        "desc": "For this project, my team and I used React and Bootstrap to create a website. The website allows users to monitor the pollution index across Indonesia. While the data is not real-time, it is relatively recent, typically ranging from a few months ago. We retrieve the data through the OpenWeather API, which requires longitude and latitude parameters to specify the geographic location. To facilitate this, we compiled a list of longitude and latitude coordinates for all the provinces in Indonesia.",
+        "link": "https://github.com/Sinanaas/carbon-footprint-react-web"
+    },
+    {
+        "id": 14,
+        "imgSrc": "../assets/raamen.jpg",
+        "title": "RAAMEN Application",
+        "desc": "This project, developed by my friends and me for our Pattern Software Design course, was implemented using .NET. While the project prioritized functionality over user interface design, as it wasn't assessed by the instructor, it offers a comprehensive management system for a fictive restaurant named RAAMEN. The system serves both customers and administrators, allowing users to conveniently place orders and browse the available ramen options. Administrators have access to vital features such as generating reports, tracking all RAAMEN transactions, and managing ramen-related actions.",
+        "link": "https://github.com/Sinanaas/RAAMEN"
     }
 ]
 

@@ -8,7 +8,7 @@ const Topbar = () => {
   };
 
   return (
-    <nav className="w-full dark:bg-neutral-900 fixed px-8 md:py-2 mb-4 drop-shadow-lg">
+    <nav className="w-full dark:bg-neutral-900 fixed z-50 px-8 md:py-2 mb-4 drop-shadow-lg">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#HOME" className="flex items-center">
           <span className="self-center md:text-4xl text-2xl font-semibold whitespace-nowrap dark:text-amber-100">SINANAAS</span>
