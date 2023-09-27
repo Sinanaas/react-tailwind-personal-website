@@ -10,8 +10,8 @@ const Topbar = () => {
   return (
     <nav className="w-full dark:bg-neutral-900 fixed px-8 md:py-2 mb-4 drop-shadow-lg">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" className="flex items-center">
-          <span className="self-center md:text-4xl text-2xl font-semibold whitespace-nowrap dark:text-white">SINANAAS</span>
+        <a href="#HOME" className="flex items-center">
+          <span className="self-center md:text-4xl text-2xl font-semibold whitespace-nowrap dark:text-amber-100">SINANAAS</span>
         </a>
         <button
           onClick={toggleMenu}
@@ -44,27 +44,17 @@ const Topbar = () => {
         <div className={`w-full md:block md:w-auto ${menuOpen ? 'block' : 'hidden'}`} id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-neutral-100 rounded-lg bg-neutral-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-neutral-800 md:dark:bg-neutral-900 dark:border-neutral-700">
             <li>
-              <a href="/home" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-amber-100 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-amber-100 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <a href="#ABOUT" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-amber-50 md:dark:hover:text-amber-100 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 About
               </a>
             </li>
             <li>
-              <a href="/portfolio" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-amber-100 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <a href="#PORTFOLIO" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-amber-50 md:dark:hover:text-amber-100 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 Portfolio
               </a>
             </li>
             <li>
-              <a href="/hobby" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-amber-100 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                Hobby
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-amber-100 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <a href="#CONTACT" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-amber-50 md:dark:hover:text-amber-100 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 Contact
               </a>
             </li>
