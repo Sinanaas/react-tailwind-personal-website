@@ -42,19 +42,19 @@ const Topbar = () => {
           </svg>
         </button>
         <div className={`w-full md:block md:w-auto ${menuOpen ? 'block' : 'hidden'}`} id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-neutral-100 rounded-lg bg-neutral-50  md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white bg-neutral-800 md:bg-neutral-900 border-neutral-700">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-neutral-100 rounded-lg bg-neutral-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-neutral-900 border-neutral-700">
             <li>
-              <a href="#ABOUT" className="text-xl block py-2 pl-3 pr-4 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-amber-50 md:hover:text-amber-200 hover:underline hover:underline-offset-4 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
+              <a href="#ABOUT" className="text-xl block py-2 pl-3 pr-4 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:p-0 text-amber-50 md:hover:text-amber-200 hover:underline hover:underline-offset-4 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
                 About
               </a>
             </li>
             <li>
-              <a href="#PORTFOLIO" className="text-xl block py-2 pl-3 pr-4 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-amber-50 md:hover:text-amber-200 hover:underline hover:underline-offset-4 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
+              <a href="#PORTFOLIO" className="text-xl block py-2 pl-3 pr-4 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0  md:p-0 text-amber-50 md:hover:text-amber-200 hover:underline hover:underline-offset-4 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
                 Portfolio
               </a>
             </li>
             <li>
-              <a href="#CONTACT" className="text-xl block py-2 pl-3 pr-4 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-amber-50 md:hover:text-amber-200 hover:underline hover:underline-offset-4 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
+              <a href="#CONTACT" className="text-xl block py-2 pl-3 pr-4 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0  md:p-0 text-amber-50 md:hover:text-amber-200 hover:underline hover:underline-offset-4 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
                 Contact
               </a>
             </li>

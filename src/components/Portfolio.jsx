@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
-import { faJava } from '@fortawesome/free-solid-svg-icons';
-import { faFigma } from '@fortawesome/free-solid-svg-icons';
-import { fa } from '@fortawesome/free-solid-svg-icons';
+// import { faJava } from '@fortawesome/free-solid-svg-icons';
+// import { faFigma } from '@fortawesome/free-solid-svg-icons';
+// import { fa } from '@fortawesome/free-solid-svg-icons';
 import works from '../works.json';
 
 const Portfolio = () => {
