@@ -8,15 +8,15 @@ const Topbar = () => {
   };
 
   return (
-    <nav className="w-full dark:bg-neutral-900 fixed z-50 px-8 md:py-2 mb-4 drop-shadow-lg">
+    <nav className="w-full bg-neutral-900 fixed z-50 px-8 md:py-2 mb-4 drop-shadow-lg">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#HOME" className="flex items-center">
-          <span className="self-center md:text-4xl text-2xl font-semibold whitespace-nowrap dark:text-amber-100">SINANAAS</span>
+          <span className="self-center md:text-4xl text-2xl font-semibold whitespace-nowrap text-amber-100">SINANAAS</span>
         </a>
         <button
           onClick={toggleMenu}
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-neutral-500 rounded-lg md:hidden hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:ring-neutral-600"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-neutral-500 rounded-lg md:hidden hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-100 text-neutral-400 hover:bg-neutral-700 focus:ring-neutral-600"
           aria-controls="navbar-default"
           aria-expanded={menuOpen}
         >
@@ -42,19 +42,19 @@ const Topbar = () => {
           </svg>
         </button>
         <div className={`w-full md:block md:w-auto ${menuOpen ? 'block' : 'hidden'}`} id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-neutral-100 rounded-lg bg-neutral-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-neutral-800 md:dark:bg-neutral-900 dark:border-neutral-700">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-neutral-100 rounded-lg bg-neutral-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white bg-neutral-800 md:bg-neutral-900 border-neutral-700">
             <li>
-              <a href="#ABOUT" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-amber-50 md:dark:hover:text-amber-100 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <a href="#ABOUT" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-amber-50 md:hover:text-amber-100 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
                 About
               </a>
             </li>
             <li>
-              <a href="#PORTFOLIO" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-amber-50 md:dark:hover:text-amber-100 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <a href="#PORTFOLIO" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-amber-50 md:hover:text-amber-100 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
                 Portfolio
               </a>
             </li>
             <li>
-              <a href="#CONTACT" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-amber-50 md:dark:hover:text-amber-100 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <a href="#CONTACT" className="text-xl block py-2 pl-3 pr-4 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-amber-50 md:hover:text-amber-100 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
                 Contact
               </a>
             </li>
