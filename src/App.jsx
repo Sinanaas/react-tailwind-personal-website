@@ -11,13 +11,13 @@ function App() {
     <>
     <div className="all-container">
       <Topbar />
-      <div className='home-section px-0 py-0 dark:bg-neutral-900' id='HOME'>
+      <div className='home-section px-0 py-0 bg-neutral-900' id='HOME'>
         <Home />
       </div>
       <div className="about-section" id='ABOUT'>
         <About />
       </div>
-      <div className="portfolio-section dark:bg-neutral-900" id='PORTFOLIO'>
+      <div className="portfolio-section bg-neutral-900" id='PORTFOLIO'>
         <Portfolio />
       </div>
       <div className="contacts-section" id='CONTACT'>
