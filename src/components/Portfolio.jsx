@@ -12,12 +12,14 @@ const Portfolio = () => {
   const [tempDesc, setTempDesc] = useState('');
   const [tempLink, setTempLink] = useState('');
   const [tempTitle, setTempTitle] = useState('');
+  const [tempTech, setTempTech] = useState([]);
 
   const getAll = (item) => {
     setTempImgSrc(item.imgSrc);
     setTempDesc(item.desc);
     setTempLink(item.link);
     setTempTitle(item.title);
+    setTempTech(item.tech);
     setModel(true);
   };
 
@@ -54,7 +56,14 @@ const Portfolio = () => {
                     <img src={tempimgSrc} alt={tempDesc} className="rounded h-full w-full drop-shadow-xl aspect-video object-cover md:object-contain h-full" />
                 </div>
                 <div className="flex flex-col modal-details md:ml-4 w-full text-amber-50 md:text-left  md:pt-0 md:w-[40%]">
-                    <h2 className='font-bold underline underline-offset-8 text-2xl mb-2 text-amber-100 hidden md:block'>{tempTitle}</h2>
+                  <div className="atas flex items-center">
+                    <h2 className='font-bold underline text-amber-100 underline-offset-8 text-2xl mb-2 text-amber-100 hidden md:block'>{tempTitle}</h2>
+                    {tempTech.map((tech) => (
+                      <div className="ml-4 border-2 bg-amber-300 rounded-full h-[60%] text-center flex justify-center md:flex md:items-center border-amber-300 hidden">
+                        <h3 className='mx-2 text-neutral-700 font-bold'>{tech}</h3>
+                      </div>
+                    ))}
+                  </div>
                     <h2 className="text-base text-left text-left hidden text-amber-50 md:block overflow-y-auto">{tempDesc}</h2>
                     <a href={tempLink} className="my-4" target='_blank'>
                         <button className="uppercase bg-amber-500 md:w-40 w-full hover:bg-amber-600 text-white font-bold py-2 px-4 rounded shadow-lg">Visit Link</button>

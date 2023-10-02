@@ -34,10 +34,10 @@
         "id": 4,
         "imgSrc": "../assets/raamen.jpg",
         "title": "RAAMEN Application",
-        "desc": "This project, developed by my friends and me for our Pattern Software Design course, was implemented using .NET. While the project prioritized functionality over user interface design, as it wasn't assessed by the instructor, it offers a comprehensive management system for a fictive restaurant named RAAMEN. The system serves both customers and administrators, allowing users to conveniently place orders and browse the available ramen options. Administrators have access to vital features such as generating reports, tracking all RAAMEN transactions, and managing ramen-related actions.",
+        "desc": "This project, developed by my friends and me for our Pattern Software Design course, was implemented using ASP.NET. While the project prioritized functionality over user interface design, as it wasn't assessed by the instructor, it offers a comprehensive management system for a fictive restaurant named RAAMEN. The system serves both customers and administrators, allowing users to conveniently place orders and browse the available ramen options. Administrators have access to vital features such as generating reports, tracking all RAAMEN transactions, and managing ramen-related actions.",
         "link": "https://github.com/Sinanaas/RAAMEN",
         "tech": [
-            ".NET"
+            "ASP.NET"
         ]
     },
     {
