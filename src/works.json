@@ -51,7 +51,7 @@
         "desc": "This project is based on Python and was developed by me and my friends as part of our Artificial Intelligence assignment. In this project, we utilized the MediaPipe library for hand detection and OpenCV2 for real-time image processing. For model training, we employed Google's Teachable Machine. While the model can accurately detect sign language gestures, it faces challenges when distinguishing sign language letters that closely resemble each other.",
         "link": "https://drive.google.com/drive/folders/1vdO-uUYLS9YHcuAn3U2rGyYjCK_StmJB",
         "tech": [
-            "figma"
+            "python"
         ],
         "src": ""
     },

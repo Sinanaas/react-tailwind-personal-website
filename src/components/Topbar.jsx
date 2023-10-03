@@ -43,17 +43,17 @@ const Topbar = () => {
         </button>
         <div className={`w-full md:block md:w-auto ${menuOpen ? 'block' : 'hidden'}`} id="navbar-default">
           <ul className="font-medium flex flex-col md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-neutral-900 border-neutral-700">
-            <li >
+            <li onClick={toggleMenu}>
               <a href="#ABOUT" className="text-xl block py-2 pl-3 pr-4 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:p-0 text-amber-50 md:hover:text-amber-200 hover:underline hover:underline-offset-4 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
                 About
               </a>
             </li>
-            <li className='border-t-[1px] md:border-[0] border-neutral-700'>
+            <li className='border-t-[1px] md:border-[0] border-neutral-700' onClick={toggleMenu}>
               <a href="#PORTFOLIO" className="text-xl block py-2 pl-3 pr-4 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0  md:p-0 text-amber-50 md:hover:text-amber-200 hover:underline hover:underline-offset-4 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
                 Portfolio
               </a>
             </li>
-            <li className='border-t-[1px] md:border-[0] border-neutral-700'>
+            <li className='border-t-[1px] md:border-[0] border-neutral-700' onClick={toggleMenu}>
               <a href="#CONTACT" className="text-xl block py-2 pl-3 pr-4 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0  md:p-0 text-amber-50 md:hover:text-amber-200 hover:underline hover:underline-offset-4 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
                 Contact
               </a>

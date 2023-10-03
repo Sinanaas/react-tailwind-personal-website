@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import works from "../works.json";
@@ -11,6 +11,8 @@ const Portfolio = () => {
     const [tempTitle, setTempTitle] = useState("");
     const [tempTech, setTempTech] = useState([]);
     const [tempSrc, setTempSrc] = useState([]);
+
+    const modalRef = useRef(null);
 
     const getAll = (item) => {
         setTempImgSrc(item.imgSrc);
@@ -35,6 +37,13 @@ const Portfolio = () => {
         setModel(false);
     };
 
+    const handleModalClick = (e) => {
+      if (modalRef.current && modalRef.current.contains(e.target)) {
+          return;
+      }
+      closeModal();
+  };
+
     useEffect(() => {
         if (model) {
             document.body.style.overflowY = "hidden";
@@ -56,8 +65,8 @@ const Portfolio = () => {
     return (
         <div className="container mx-auto p-10 md:p-20 md:px-[8%] min-h-[100vh] flex flex-col items-center justify-center ">
             <h1 className="text-4xl md:text-6xl mb-8 md:mb-16 text-amber-100 font-semibold underline underline-offset-8">PORTFOLIO</h1>
-            <div className={model ? "fixed inset-0 z-50 flex items-center justify-center bg-black/80" : "hidden"} onClick={closeModal}>
-                <div className="md:flex w-[90%] h-auto md:h-auto md:max-h-[80%] bg-neutral-800 overflow-y-auto rounded-lg py-4 pl-4 pr-8 border-2 border-neutral-900">
+            <div className={model ? "fixed inset-0 z-50 flex items-center justify-center bg-black/80" : "hidden"} onClick={handleModalClick}>
+                <div ref={modalRef} className="md:flex w-[90%] h-auto md:h-auto md:max-h-[80%] bg-neutral-800 overflow-y-auto rounded-lg py-4 pl-4 pr-8 border-2 border-neutral-900">
                     <div className="modal-image flex flex-col justify-center items-center md:w-[60%] border-[1px] border-neutral-600 bg-neutral-700 rounded">
                         <h2 className="font-bold text-amber-100 text-lg md:text-2xl mb-2 md:hidden">
                             {tempTitle}
@@ -80,7 +89,7 @@ const Portfolio = () => {
                               </div>
                           ))}
                         </div>
-                        <a href={tempLink} className="my-4 mt-auto" target="_blank">
+                        <a href={tempLink} className="mt-auto" target="_blank">
                             <button className="flex-end uppercase bg-amber-500 md:w-40 w-full hover:bg-amber-600 text-white font-bold py-2 px-4 rounded shadow-lg">Visit Link</button>
                         </a>
                         <h2 className="md:text-xl text-sm text-left md:hidden md:text-center block overflow-y-auto max-h-36 h-36 w-full h-full mb-2">{tempDesc}</h2>
