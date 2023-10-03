@@ -68,9 +68,7 @@ const Portfolio = () => {
             <div className={model ? "fixed inset-0 z-50 flex items-center justify-center bg-black/80" : "hidden"} onClick={handleModalClick}>
                 <div ref={modalRef} className="md:flex w-[90%] h-auto md:h-auto md:max-h-[80%] bg-neutral-800 overflow-y-auto rounded-lg py-4 pl-4 pr-8 border-2 border-neutral-900">
                     <div className="modal-image flex flex-col justify-center items-center md:w-[60%] border-[1px] border-neutral-600 bg-neutral-700 rounded">
-                        <h2 className="font-bold text-amber-100 text-lg md:text-2xl mb-2 md:hidden">
-                            {tempTitle}
-                        </h2>
+                        <h2 className="font-bold text-amber-100 text-lg md:text-2xl mb-2 mt-2 md:mt-0 md:hidden">{tempTitle}</h2>
                         <img src={tempimgSrc} alt={tempDesc} className="rounded h-full w-full drop-shadow-xl aspect-video object-cover md:object-contain h-full"/>
                     </div>
                     <div className="flex flex-col modal-details md:ml-4 w-full text-amber-50 md:text-left  md:pt-0 md:w-[40%]">
@@ -92,7 +90,7 @@ const Portfolio = () => {
                         <a href={tempLink} className="mt-auto" target="_blank">
                             <button className="flex-end uppercase bg-amber-500 md:w-40 w-full hover:bg-amber-600 text-white font-bold py-2 px-4 rounded shadow-lg">Visit Link</button>
                         </a>
-                        <h2 className="md:text-xl text-sm text-left md:hidden md:text-center block overflow-y-auto max-h-36 h-36 w-full h-full mb-2">{tempDesc}</h2>
+                        <h2 className="md:text-xl mt-2 text-sm text-left md:hidden md:text-center block overflow-y-auto max-h-36 h-36 w-full h-full mb-2">{tempDesc}</h2>
                     </div>
                     <div className="close-button justify-end">
                         <FontAwesomeIcon icon={faClose} className="text-gray-500 cursor-pointer" size="2x" onClick={closeModal}/>
