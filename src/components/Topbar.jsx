@@ -9,7 +9,7 @@ const Topbar = () => {
 
   return (
     <nav className="w-full bg-neutral-900 fixed z-50 px-8 md:py-2 mb-4 drop-shadow-lg">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap md:h-[8vh] items-center justify-between mx-auto p-4">
         <a href="#HOME" className="flex items-center">
           <span className="self-center md:text-4xl text-2xl font-semibold whitespace-nowrap text-amber-100">SINANAAS</span>
         </a>

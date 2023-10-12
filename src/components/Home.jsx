@@ -10,7 +10,7 @@ const Home = () => {
           <h1 className='font-bold md:text-6xl lg:text-7xl text-4xl mb-4'>Hello There!</h1>
           <p className='text-xl md:text-lg font-semibold mx-auto'>My name is Muhammad Sinan Abdussyakur, an undergraduate student at Bina Nusantara University majoring in Computer Science and currently living in Jakarta, Indonesia. Welcome to my portfolio :)</p>
         </div>
-        <div className="lg:w-[30vw] md:w-[40vw] flex items-center justify-center"> 
+        <div className="lg:w-[30vw] md:w-[40vw] flex items-center justify-center mt-6"> 
           <img src={sinanImg} alt="Muhammad Sinan Abdussyakur" className="md:w-full w-96 h-auto " /> 
         </div>
       </div>
