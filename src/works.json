@@ -4,7 +4,7 @@
         "imgSrc": "../assets/carbon.png",
         "title": "Pollution Index Map",
         "desc": "For this project, my team and I used React and Bootstrap to create a website. The website allows users to monitor the pollution index across Indonesia. While the data is not real-time, it is relatively recent, typically ranging from a few months ago. We retrieve the data through the OpenWeather API, which requires longitude and latitude parameters to specify the geographic location. To facilitate this, we compiled a list of longitude and latitude coordinates for all the provinces in Indonesia.",
-        "link": "https://github.com/Sinanaas/carbon-footprint-react-web",
+        "link": "https://carbon-footprint-c8bqthz3x-orangemangodimz.vercel.app/",
         "tech": [
             "react",
             "bootstrap"
