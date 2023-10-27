@@ -97,10 +97,10 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-            <div className="md:container md:mx-auto bg-neutral-900 grid grid-cols-2 grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="md:container md:mx-auto bg-neutral-900 grid grid-cols-2 grid-cols-2 md:grid-cols-3 gap-6">
                 {works.map((item) => (
                     <div key={item.id} className="relative group">
-                        <div className="cursor-pointer max-w-xs overflow-hidden bg-cover bg-no-repeat" onClick={() => getAll(item)}>
+                        <div className="cursor-pointer max-w-xs md:max-w-md overflow-hidden bg-cover bg-no-repeat" onClick={() => getAll(item)}>
                             <img src={item.imgSrc} alt={item.desc} className="w-full h-full object-cover aspect-square rounded-sm group-hover:blur-[2px]"/>
                             <div className="absolute inset-0 h-full w-full bg-neutral-900 bg-fixed opacity-0 transition duration-300 ease-in-out group-hover:opacity-70 flex flex-col justify-center items-center">
                                 <p className="text-white text-center">{item.title}</p>
