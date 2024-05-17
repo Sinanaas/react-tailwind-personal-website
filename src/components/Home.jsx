@@ -24,7 +24,7 @@ const Home = () => {
         </div>
         <div className="lg:w-[30vw] md:w-[40vw] flex items-center justify-center mt-6">
           {loading && (
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center ml-[650px]">
               <ClipLoader color={color} loading={loading} size={50} />
             </div>
           )}
