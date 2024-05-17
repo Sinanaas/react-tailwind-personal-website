@@ -31,7 +31,7 @@ const Home = () => {
           <img
             src={sinanImg}
             alt="Muhammad Sinan Abdussyakur"
-            className={`md:w-full w-96 h-auto ${loading ? 'hidden' : 'block'}`}
+            className={`sinanImage md:w-full w-96 h-auto ${loading ? 'hidden' : 'block'}`}
             onLoad={handleImageLoaded}
             onError={handleImageError}
           />

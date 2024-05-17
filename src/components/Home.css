@@ -1,14 +1,24 @@
 .home-section {
-    background:
+    /* background:
             radial-gradient(circle, transparent 20%, #171717 20%, #171717 80%, transparent 80%, transparent),
             radial-gradient(circle, transparent 20%, #171717 20%, #171717 80%, transparent 80%, transparent) 50px 50px,
             linear-gradient(#24242D 4px, transparent 4px) 0 -2px,
             linear-gradient(90deg, #24242D 4px, transparent 4px) -2px 0;
             background-color: #171717;
-            background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+
+            background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px; */
+    background-image: url('../../public/assets/pasar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:color-dodge;
 }
 
 .home-section h1 {
     text-shadow: -1px -1px 0 #fef3c7, 1px -1px 0 #fef3c7, -1px 1px 0 #fef3c7, 1px 1px 0 #fef3c7;
     color: #171717;
+}
+
+.sinanImage {
+    filter: brightness(80%);
+    filter: contrast(94%);
 }
