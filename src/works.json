@@ -77,5 +77,19 @@
             "tailwindcss"
         ],
         "src": []
+    },
+    {
+        "id": 8,
+        "imgSrc": "../assets/vern.webp",
+        "title": "VERN - Vehicle Rental",
+        "desc": "Vehicle rental website made for Final Project on Web Programming course. On this project i’ve assigned as Full-Stack Developer but more focused on backend, mainly integrating external services into this website, such as Google OAuth, Midtrans Payment Gateway, and Mailtrap Email Delivery.",
+        "link": "https://dta32-serverdown.pages.dev/",
+        "tech": [
+            "react",
+            "laravel",
+            "postgresql",
+            "tailwindcss"
+        ],
+        "src": []
     }
 ]
