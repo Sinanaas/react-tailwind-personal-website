@@ -10,7 +10,8 @@
     background-image: url('../../public/assets/pasar.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode:color-dodge;
+    background-blend-mode: color-dodge;
+    background-position-y: center;
 }
 
 .home-section h1 {
@@ -18,7 +19,3 @@
     color: #171717;
 }
 
-.sinanImage {
-    filter: brightness(80%);
-    filter: contrast(94%);
-}

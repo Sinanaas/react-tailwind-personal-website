@@ -5,6 +5,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contacts from './components/Contacts';
 import FadeInSection from "./components/FadeInSection";
+import Movies from './components/Movies';
 
 
 
@@ -23,6 +24,9 @@ function App() {
         </div>
         <div className="portfolio-section bg-neutral-900 scroll-mt-[10vh]" id='PORTFOLIO'>
           <Portfolio />
+        </div>
+        <div className="movies-section bg-neutral-900 scroll-mt-[10vh]" id='MOVIES'>
+          <Movies />
         </div>
         <div className="contacts-section" id='CONTACT'>
           <Contacts />

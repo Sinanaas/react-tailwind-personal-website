@@ -31,9 +31,10 @@ const Home = () => {
           <img
             src={sinanImg}
             alt="Muhammad Sinan Abdussyakur"
-            className={`sinanImage md:w-full w-96 h-auto ${loading ? 'hidden' : 'block'}`}
+            className={`md:w-full w-96 h-auto ${loading ? 'hidden' : 'block'} brightness-[.9] contrast-[1.02]`}
             onLoad={handleImageLoaded}
             onError={handleImageError}
+            id='sinan-img'
           />
         </div>
       </div>
