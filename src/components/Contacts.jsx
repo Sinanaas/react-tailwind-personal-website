@@ -32,8 +32,8 @@ export default function Contacts() {
   };
 
   return (
-    <FadeInSection>
-      <div className="all-container bg-neutral-800 text-amber-50 min-w-[100%] md:flex md:flex-col">
+    <div className="all-container bg-neutral-800 text-amber-50 min-w-[100%] md:flex md:flex-col">
+      <FadeInSection>
         <div className="contacts-container flex flex-col md:flex-row py-28  min-w-[100%]">
           <div className="left-container md:flex-end md:flex md:w-[50%] md:text-right md:items-center md:justify-end md:pr-16 md: ">
             <h1 className='md:text-[60px] lg:text-[80px] xl:text-[90px] text-5xl font-bold md:font-bold md:w-[60%] mb-4'>Send Me a Message</h1>
@@ -83,7 +83,7 @@ export default function Contacts() {
             </li>
           </ul>
         </div>
-      </div>
-    </FadeInSection>
+      </FadeInSection>
+    </div>
   )
 }

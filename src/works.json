@@ -91,5 +91,20 @@
             "tailwindcss"
         ],
         "src": []
+    },
+    {
+        "id": 8,
+        "imgSrc": "../assets/gotth.jpg",
+        "title": "GOTTH Auction",
+        "desc": "This project is a simple auction website that was made using Golang, Tailwind CSS, and HTMX. This project was made for me to learn websocket in Golang",
+        "link": "https://github.com/Sinanaas/gotth-auction",
+        "tech": [
+            "golang",
+            "templ",
+            "tailwindcss",
+            "htmx",
+            "postgresql"
+        ],
+        "src": []
     }
 ]
