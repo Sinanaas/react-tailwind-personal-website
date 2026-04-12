@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from 'axios';
 import FadeInSection from "./FadeInSection";
 
@@ -81,8 +81,8 @@ const Movies = () => {
             <h1 className="text-4xl md:text-6xl mb-8 md:mb-16 text-amber-100 font-semibold underline underline-offset-8">FAVORITE MOVIES</h1>
             <div className="md:container md:mx-auto bg-neutral-900 grid grid-cols-2 md:grid-cols-3 gap-6">
                 {movies.map((movie) => (
-                    <FadeInSection>
-                        <div key={movie.id} className="movie-card">
+                    <FadeInSection key={movie.id}>
+                        <div className="movie-card">
                             {movie.poster_path ? (
                                 <img
                                     src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}

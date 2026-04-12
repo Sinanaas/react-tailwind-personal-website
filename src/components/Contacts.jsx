@@ -1,89 +1,155 @@
-import React, { useRef } from 'react';
-// import './Contacts.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLink, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faSpotify } from '@fortawesome/free-brands-svg-icons';
-import { faSteam } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import FadeInSection from "./FadeInSection";
-
 
 export default function Contacts() {
-  function refreshPage() {
-    window.location.reload(false);
-  }
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_88ziwsr', 'template_5ty8935', form.current, 'MXZpCdpJz8PVU2j9_')
-      .then((result) => {
-        console.log("Result:" + result)
-        alert("Successfully sent the email!")
-        refreshPage()
-      }, (error) => {
-        console.log("Error:" + error)
-      });
+    emailjs
+      .sendForm('service_88ziwsr', 'template_5ty8935', form.current, 'MXZpCdpJz8PVU2j9_')
+      .then(
+        () => {
+          alert('Transmission received!');
+          e.target.reset();
+        },
+        (error) => {
+          console.error('Error:', error);
+        }
+      );
   };
 
   return (
-    <div className="all-container bg-neutral-800 text-amber-50 min-w-[100%] md:flex md:flex-col">
-      <FadeInSection>
-        <div className="contacts-container flex flex-col md:flex-row py-28  min-w-[100%]">
-          <div className="left-container md:flex-end md:flex md:w-[50%] md:text-right md:items-center md:justify-end md:pr-16 md: ">
-            <h1 className='md:text-[60px] lg:text-[80px] xl:text-[90px] text-5xl font-bold md:font-bold md:w-[60%] mb-4'>Send Me a Message</h1>
-          </div>
-          <div className="hidden md:block line border-[1.5px] border-amber-50 rounded ">
+    <section className="bg-background py-24 px-6 relative overflow-hidden border-t-2 border-surface-variant" id="CONTACT">
+      {/* Faint sticker decorations */}
+      <img src="/assets/VotedSticker_01.png" alt="" aria-hidden="true" className="absolute top-8 right-10 w-20 opacity-[0.08] rotate-12 pointer-events-none select-none" />
+      <img src="/assets/VotedSticker_03.png" alt="" aria-hidden="true" className="absolute bottom-16 left-8 w-14 opacity-[0.06] -rotate-12 pointer-events-none select-none" />
 
+      <div className="max-w-4xl mx-auto relative z-10">
+
+        {/* Section header — mirrors About style */}
+        <div className="flex items-center gap-8 mb-20">
+          <div className="h-[2px] flex-grow bg-outline-variant/30" />
+          <h2 className="font-headline text-4xl font-bold text-on-surface italic whitespace-nowrap">
+            TELEGRAPH
+          </h2>
+          <div className="h-[2px] flex-grow bg-outline-variant/30" />
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+
+          {/* Left: contact info */}
+          <div className="lg:col-span-2 flex flex-col gap-8">
+            <p className="font-body text-on-surface/60 leading-relaxed">
+              Open to backend engineering roles, freelance work, and technical conversations.
+              Reach out through any channel below.
+            </p>
+
+            <div className="flex flex-col gap-4">
+              <a
+                href="mailto:muhammadsinanabdussyakur@gmail.com"
+                className="group flex items-center gap-4 p-4 border border-outline-variant/20 bg-surface-container hover:border-primary/40 transition-colors"
+              >
+                <span className="material-symbols-outlined text-primary text-xl shrink-0">mail</span>
+                <div>
+                  <p className="font-label text-[9px] text-outline uppercase tracking-widest mb-0.5">EMAIL</p>
+                  <p className="font-label text-xs text-on-surface/70 group-hover:text-primary transition-colors break-all">muhammadsinanabdussyakur@gmail.com</p>
+                </div>
+              </a>
+
+              <a
+                href="https://github.com/Sinanaas"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4 p-4 border border-outline-variant/20 bg-surface-container hover:border-primary/40 transition-colors"
+              >
+                <i className="devicon-github-original text-primary text-xl shrink-0" />
+                <div>
+                  <p className="font-label text-[9px] text-outline uppercase tracking-widest mb-0.5">GITHUB</p>
+                  <p className="font-label text-xs text-on-surface/70 group-hover:text-primary transition-colors">github.com/Sinanaas</p>
+                </div>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/muhammad-sinan-abdussyakur-836b13201/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4 p-4 border border-outline-variant/20 bg-surface-container hover:border-primary/40 transition-colors"
+              >
+                <i className="devicon-linkedin-plain text-primary text-xl shrink-0" />
+                <div>
+                  <p className="font-label text-[9px] text-outline uppercase tracking-widest mb-0.5">LINKEDIN</p>
+                  <p className="font-label text-xs text-on-surface/70 group-hover:text-primary transition-colors">muhammad-sinan-abdussyakur</p>
+                </div>
+              </a>
+            </div>
           </div>
-          <div className="right-container flex md:w-[50%] text-left  w-[100%] md:justify-start justify-center items-center md:pl-16 ">
-            <form ref={form} onSubmit={sendEmail} className='w-[80%] max-w-[100%] md:w-[60%] '>
-              <div className="gap-4 flex flex-col  w-full">
-                <div className="name-container flex flex-col">
-                  <label htmlFor="name">Name</label>
-                  <input type="text" name="name" id="nameTxt" placeholder='Your name' className='rounded p-2 bg-neutral-800 border-amber-50 border-[1px] mt-2' />
+
+          {/* Right: form */}
+          <div className="lg:col-span-3 bg-surface-container border border-outline-variant/20 relative">
+            {/* Top amber bar */}
+            <div className="h-[2px] w-full bg-primary" />
+
+            <div className="px-8 py-6 border-b border-outline-variant/10 flex items-center gap-3">
+              <img src="/assets/Souls.png" alt="" className="w-3 h-3 object-contain opacity-70" />
+              <span className="font-label text-[10px] text-primary uppercase tracking-widest">LEAVE A MESSAGE</span>
+            </div>
+
+            <form ref={form} onSubmit={sendEmail} className="p-8 flex flex-col gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex flex-col gap-2">
+                  <label className="font-label text-[9px] text-outline uppercase tracking-widest">
+                    SENDER NAME
+                  </label>
+                  <input
+                    name="name"
+                    type="text"
+                    placeholder="ENTER NAME..."
+                    required
+                    className="bg-surface pl-2 border-0 border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-on-surface font-label text-xs py-2 px-0 placeholder:text-on-surface/20 outline-none"
+                  />
                 </div>
-                <div className="from-container flex flex-col">
-                  <label htmlFor="from">From</label>
-                  <input type="email" pattern=".+@gmail\.com" name="from" id="fromTxt" placeholder='Your gmail' className='rounded p-2 bg-neutral-800 border-amber-50 border-[1px] mt-2' />
+
+                <div className="flex flex-col gap-2">
+                  <label className="font-label text-[9px] text-outline uppercase tracking-widest">
+                    RETURN EMAIL
+                  </label>
+                  <input
+                    name="from"
+                    type="email"
+                    placeholder="USER@STATION.COM"
+                    required
+                    className="bg-surface border-0 pl-2 border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-on-surface font-label text-xs py-2 px-0 placeholder:text-on-surface/20 outline-none"
+                  />
                 </div>
-                <div className="message-container flex flex-col">
-                  <label htmlFor="message">Message</label>
-                  <textarea id="message" name="message" placeholder="What's on your mind" rows="8" required className='rounded p-2 bg-neutral-800 border-amber-50 border-[1px] mt-2 w-[100%]'></textarea>
-                </div>
-                <div className="submit-container flex justify-center md:justify-start">
-                  <button type='submit' className='color-amber-50 hover:bg-amber-600 bg-amber-500 px-4 font-semibold w-full md:w-44 rounded py-[4px] text-amber-50'>Submit</button>
-                </div>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label className="font-label text-[9px] text-outline uppercase tracking-widest">
+                  MESSAGE
+                </label>
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="TYPE SIGNAL CONTENT HERE..."
+                  required
+                  className="bg-surface pl-2 border-0 border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-on-surface font-label text-xs py-2 px-0 placeholder:text-on-surface/20 outline-none resize-none"
+                />
+              </div>
+
+              <div className="flex justify-end pt-2">
+                <button
+                  type="submit"
+                  className="bg-primary text-on-primary font-label font-bold text-xs px-10 py-3 uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all"
+                >
+                  TRANSMIT
+                </button>
               </div>
             </form>
           </div>
+
         </div>
-        <div className="footer pb-8 2-full ">
-          <ul className="contact-list gap-8 md:gap-20 flex flex-col  items-center md:flex-row justify-center  ">
-            <li className='gap-2 flex items-center'>
-              <FontAwesomeIcon icon={faPhone} id="phone-icon" />
-              <span className="contact-text">+6281395224240</span>
-            </li>
-            <li className='gap-2 flex items-center'>
-              <FontAwesomeIcon icon={faEnvelope} id="email-icon" />
-              <span className="contact-text">pudge842@gmail.com</span>
-            </li>
-            <li className='gap-2 flex items-center'>
-              <FontAwesomeIcon icon={faGithub} id="git-icon" />
-              <a href="https://github.com/Sinanaas" target='_blank'><span className="contact-text">Sinanaas</span></a>
-            </li>
-            <li className='gap-2 flex items-center'>
-              <FontAwesomeIcon icon={faLinkedin} id="linkedIn-icon" />
-              <a href="https://www.linkedin.com/in/m-sinan-as-836b13201/" target='_blank'><span className="contact-text">M Sinan As</span></a>
-            </li>
-          </ul>
-        </div>
-      </FadeInSection>
-    </div>
-  )
+      </div>
+    </section>
+  );
 }

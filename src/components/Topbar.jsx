@@ -1,85 +1,106 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+
+const navLinks = [
+  { label: 'ABOUT',       href: '#ABOUT',      id: 'ABOUT' },
+  { label: 'PORTFOLIO', href: '#PORTFOLIO', id: 'PORTFOLIO' },
+  { label: 'EXPERIENCES',    href: '#EXPERIENCES',     id: 'EXPERIENCES' },
+  { label: 'CONTACTS',  href: '#CONTACT',   id: 'CONTACT' },
+];
 
 const Topbar = () => {
-
-  const [scrolling, setScrolling] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const [activeId, setActiveId] = useState('ABOUT');
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > window.innerHeight / 10) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
+    const closeOnDesktop = () => { if (window.innerWidth >= 768) setMenuOpen(false); };
+    window.addEventListener('resize', closeOnDesktop);
+    return () => window.removeEventListener('resize', closeOnDesktop);
+  }, []);
+
+  useEffect(() => {
+    const sections = navLinks
+      .map(({ id }) => document.getElementById(id))
+      .filter(Boolean);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // Pick the entry closest to the top of the viewport that is intersecting
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+        if (visible.length > 0) setActiveId(visible[0].target.id);
+      },
+      {
+        // Fire when a section crosses the upper 20% of the viewport
+        rootMargin: '0px 0px -80% 0px',
+        threshold: 0,
       }
-    };
+    );
 
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <nav className={`w-full fixed z-50 px-8 min-h-[10vh] py-2 pt-3 mb-4 drop-shadow-lg ${scrolling ? 'bg-neutral-900' : 'bg-transparent'} transition-all duration-500 ease-in-out `}>
-      <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 `}>
-        <a href="#HOME" className="flex items-center">
-          <span className="self-center md:text-4xl text-2xl font-semibold whitespace-nowrap text-amber-100">SINANAAS</span>
-        </a>
-        <button
-          onClick={toggleMenu}
-          type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-neutral-500 rounded-lg md:hidden hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-100 text-neutral-400 hover:bg-neutral-700 focus:ring-neutral-600"
-          aria-controls="navbar-default"
-          aria-expanded={menuOpen}
-        >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className={`w-5 h-5 ${menuOpen ? 'hidden' : ''}`}
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
-          <svg
-            className={`w-5 h-5 ${menuOpen ? '' : 'hidden'}`}
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-        <div className={`w-full md:block md:w-auto ${menuOpen ? 'block' : 'hidden'}`} id="navbar-default">
-          <ul className={`font-medium flex flex-col md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  border-neutral-700`}>
-            <li onClick={toggleMenu}>
-              <a href="#ABOUT" className="text-xl block py-2 pl-3 pr-4 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:p-0 text-amber-50 md:hover:text-amber-200 hover:underline hover:underline-offset-4 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
-                About
-              </a>
-            </li>
-            <li className='border-t-[1px] md:border-[0] border-neutral-700' onClick={toggleMenu}>
-              <a href="#PORTFOLIO" className="text-xl block py-2 pl-3 pr-4 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0  md:p-0 text-amber-50 md:hover:text-amber-200 hover:underline hover:underline-offset-4 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
-                Portfolio
-              </a>
-            </li>
-            <li className='border-t-[1px] md:border-[0] border-neutral-700' onClick={toggleMenu}>
-              <a href="#CONTACT" className="text-xl block py-2 pl-3 pr-4 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0  md:p-0 text-amber-50 md:hover:text-amber-200 hover:underline hover:underline-offset-4 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+    <header className="flex justify-between md:grid md:grid-cols-3 items-center w-full px-6 py-4 sticky top-0 z-50 bg-background border-b-2 border-surface-variant">
+      <div className="flex items-center gap-3">
+        <img
+          src="/assets/deadlock-mark.svg"
+          alt="Deadlock mark"
+          className="h-8 w-8 object-contain"
+          style={{ filter: 'brightness(0) saturate(100%) invert(78%) sepia(61%) saturate(568%) hue-rotate(338deg) brightness(102%) contrast(101%)' }}
+        />
+        <span className="text-xl font-black text-primary italic font-headline uppercase tracking-widest hidden sm:block">
+          SINANAAS
+        </span>
       </div>
-    </nav>
+
+      <nav className="hidden md:flex justify-center gap-8">
+        {navLinks.map((link) => (
+          <a
+            key={link.label}
+            href={link.href}
+            className={`font-label uppercase tracking-widest transition-all duration-200 px-1 pb-1 hover:text-primary hover:bg-surface-variant ${
+              activeId === link.id
+                ? 'text-primary border-b-2 border-primary'
+                : 'text-on-surface/60'
+            }`}
+          >
+            {link.label}
+          </a>
+        ))}
+      </nav>
+
+      <div className="flex justify-end">
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-primary p-2 hover:bg-surface-variant transition-all"
+        >
+          <span className="material-symbols-outlined">{menuOpen ? 'close' : 'menu'}</span>
+        </button>
+      </div>
+
+      {/* Mobile dropdown */}
+      {menuOpen && (
+        <div className="absolute top-full left-0 right-0 bg-background border-b-2 border-surface-variant md:hidden">
+          <nav className="flex flex-col">
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className={`font-label uppercase tracking-widest px-8 py-4 transition-all border-b border-surface-variant hover:text-primary hover:bg-surface-variant ${
+                  activeId === link.id ? 'text-primary' : 'text-on-surface/60'
+                }`}
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+        </div>
+      )}
+    </header>
   );
 };
 

@@ -1,21 +1,70 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        'about-bg': '#171717',
-      },
-      // screens: {
-      //   sm: '600px',
-      //   md: '728px',
-      //   lg: '984px',
-      //   xl: '1240px',
-      //   '2xl': '1496px',
-      // },
+export const darkMode = 'class';
+export const content = [
+  "./src/**/*.{js,jsx,ts,tsx}",
+];
+export const theme = {
+  extend: {
+    colors: {
+      "surface-container-low": "#1c1b1b",
+      "primary-container": "#d48806",
+      "background": "#131313",
+      "primary": "#ffb95f",
+      "surface-container-high": "#2a2a2a",
+      "on-primary-fixed": "#2a1700",
+      "tertiary": "#ffb68c",
+      "on-secondary-fixed-variant": "#3d4a41",
+      "inverse-primary": "#855300",
+      "inverse-on-surface": "#313030",
+      "primary-fixed": "#ffddb8",
+      "error-container": "#93000a",
+      "on-tertiary-fixed-variant": "#753401",
+      "surface-container": "#20201f",
+      "on-secondary": "#27332b",
+      "surface": "#131313",
+      "on-primary-fixed-variant": "#653e00",
+      "on-error": "#690005",
+      "surface-bright": "#393939",
+      "outline": "#a08e7b",
+      "on-secondary-container": "#abb9ae",
+      "tertiary-fixed": "#ffdbc9",
+      "surface-dim": "#131313",
+      "on-primary-container": "#472a00",
+      "tertiary-container": "#da834d",
+      "error": "#ffb4ab",
+      "surface-tint": "#ffb95f",
+      "surface-container-highest": "#353535",
+      "secondary-container": "#3d4a41",
+      "on-surface": "#e5e2e1",
+      "inverse-surface": "#e5e2e1",
+      "secondary-fixed": "#d8e6da",
+      "on-background": "#e5e2e1",
+      "tertiary-fixed-dim": "#ffb68c",
+      "on-error-container": "#ffdad6",
+      "outline-variant": "#524435",
+      "surface-variant": "#353535",
+      "on-tertiary": "#532200",
+      "on-tertiary-fixed": "#321200",
+      "on-surface-variant": "#d8c3ae",
+      "on-secondary-fixed": "#121e17",
+      "on-primary": "#472a00",
+      "primary-fixed-dim": "#ffb95f",
+      "surface-container-lowest": "#0e0e0e",
+      "secondary": "#bccabf",
+      "on-tertiary-container": "#532300",
+      "secondary-fixed-dim": "#bccabf",
+    },
+    borderRadius: {
+      DEFAULT: "0px",
+      lg: "0px",
+      xl: "0px",
+      full: "9999px",
+    },
+    fontFamily: {
+      headline: ["Rock N Roll One", "Reaver", "Newsreader", "serif"],
+      body: ["Work Sans", "sans-serif"],
+      label: ["Valve Oracle", "Space Grotesk", "monospace"],
     },
   },
-  plugins: [],
-}
+};
+export const plugins = [];
