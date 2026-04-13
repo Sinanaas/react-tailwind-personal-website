@@ -4,7 +4,7 @@ const spiritIcon = '/assets/Spirit.png';
 
 const skills = {
   'LANGUAGES': ['Golang', 'Java', 'JavaScript', 'TypeScript', 'SQL', 'X++', 'C'],
-  'BACKEND': ['Express.js', 'Sequelize ORM', 'ASP.NET', 'Laravel', 'Spring Boot'],
+  'BACKEND': ['Express.js', 'Sequelize ORM', 'ASP.NET', 'Laravel', 'Spring Boot', 'Jest'],
   'FRONTEND': ['React', 'Tailwind CSS', 'Bootstrap', 'HTMX'],
   'DATABASES': ['PostgreSQL', 'MySQL', 'Microsoft SQL Server'],
   'TOOLS': ['Git', 'Docker', 'Linux', 'Jira', 'Postman'],
