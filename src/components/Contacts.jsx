@@ -31,7 +31,7 @@ export default function Contacts() {
         <div className="flex items-center gap-8 mb-20">
           <div className="h-[2px] flex-grow bg-outline-variant/30" />
           <h2 className="font-headline text-4xl font-bold text-on-surface italic whitespace-nowrap">
-            TELEGRAPH
+            CONTACTS
           </h2>
           <div className="h-[2px] flex-grow bg-outline-variant/30" />
         </div>
