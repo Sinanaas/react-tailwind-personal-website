@@ -44,7 +44,7 @@ function App() {
             rel="noopener noreferrer"
             className="underline hover:text-on-surface/50 transition-colors"
           >
-            github.com/its-nion/deadlock-assets
+            github.com/deadlock-api/deadlock-api-assets
           </a>
           . All Deadlock assets are property of Valve Corporation. Not affiliated with or endorsed by Valve.
         </p>
