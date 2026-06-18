@@ -52,6 +52,11 @@ const Home = () => {
                 VIEW PORTFOLIO
               </button>
             </a>
+            <a href="/assets/resume.pdf" download="Muhammad Abdussyakur - Resume.pdf">
+              <button className="border border-outline-variant bg-surface-container-highest px-8 py-4 font-label font-bold text-primary uppercase tracking-wider hover:bg-surface-bright transition-all">
+                DOWNLOAD CV
+              </button>
+            </a>
           </div>
 
           {/* Deadlock stat badges */}
