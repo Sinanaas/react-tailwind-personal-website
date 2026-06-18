@@ -1,11 +1,11 @@
 const entries = [
   {
-    period: 'NOV 2025 — PRESENT',
+    period: 'NOV 2025 — MAY 2026',
     title: 'BACKEND ENGINEER — PT. PARAGON TECHNOLOGY AND INNOVATION',
     location: 'Jakarta, Indonesia',
-    status: 'ACTIVE',
-    statusStyle: 'bg-primary-container/20 text-primary-container outline-primary-container/30',
-    dotStyle: 'bg-primary',
+    status: 'ARCHIVED',
+    statusStyle: 'bg-surface-container-highest text-outline outline-outline/30',
+    dotStyle: 'bg-primary-container',
     bullets: [
       'Developed and implemented a Product Information Management (PIM) system using Express.js and Sequelize ORM, supporting Paragon\'s omnichannel product data operations.',
       'Managed and delivered multiple Jira tickets spanning CRON Jobs, database migrations, proxy configuration, authentication, report generation, and CRUD operations.',
