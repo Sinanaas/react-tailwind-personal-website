@@ -1,20 +1,23 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 
 export default function Contacts() {
   const form = useRef();
+  const [status, setStatus] = useState(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setStatus('sending');
     emailjs
-      .sendForm('service_88ziwsr', 'template_5ty8935', form.current, 'MXZpCdpJz8PVU2j9_')
+      .sendForm('service_zr1jvu9', 'template_5ty8935', form.current, 'MXZpCdpJz8PVU2j9_')
       .then(
         () => {
-          alert('Transmission received!');
+          setStatus('sent');
           e.target.reset();
         },
         (error) => {
           console.error('Error:', error);
+          setStatus('error');
         }
       );
   };
@@ -137,10 +140,27 @@ export default function Contacts() {
                 />
               </div>
 
-              <div className="flex justify-end pt-2">
+              <div className="flex items-center justify-between pt-2">
+                {status === 'sent' && (
+                  <span className="font-label text-[10px] text-primary uppercase tracking-widest flex items-center gap-2">
+                    <span className="material-symbols-outlined text-sm">check_circle</span>
+                    TRANSMISSION RECEIVED
+                  </span>
+                )}
+                {status === 'error' && (
+                  <span className="font-label text-[10px] text-error uppercase tracking-widest flex items-center gap-2">
+                    <span className="material-symbols-outlined text-sm">error</span>
+                    TRANSMISSION FAILED
+                  </span>
+                )}
+                {status === 'sending' && (
+                  <span className="font-label text-[10px] text-outline uppercase tracking-widest">TRANSMITTING...</span>
+                )}
+                {!status && <span />}
                 <button
                   type="submit"
-                  className="bg-primary text-on-primary font-label font-bold text-xs px-10 py-3 uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all"
+                  disabled={status === 'sending'}
+                  className="bg-primary text-on-primary font-label font-bold text-xs px-10 py-3 uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   TRANSMIT
                 </button>
