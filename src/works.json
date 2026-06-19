@@ -8,7 +8,7 @@
         "tech": ["golang", "postgresql", "mongodb", "redis", "rabbitmq", "consul", "jaeger", "docker"]
     },
     {
-        "id": 3,
+        "id": 2,
         "imgSrc": "/assets/gotth.jpg",
         "title": "GOTTH Auction",
         "desc": "Real-time auction website built with Golang, HTMX, and Templ to learn WebSockets in Go.",
@@ -16,20 +16,12 @@
         "tech": ["golang", "templ", "tailwindcss", "htmx", "postgresql"]
     },
     {
-        "id": 2,
+        "id": 3,
         "imgSrc": "/assets/dashboard.png",
         "title": "VERN - Vehicle Rental",
         "desc": "Full-stack vehicle rental platform built for a Web Programming final project. Integrated Google OAuth, Midtrans Payment Gateway, and Mailtrap Email Delivery on the backend.",
         "link": "https://dta32-serverdown.pages.dev/",
         "tech": ["react", "laravel", "postgresql", "tailwindcss"]
-    },
-    {
-        "id": 3,
-        "imgSrc": "/assets/personal.png",
-        "title": "Personal Website",
-        "desc": "Portfolio website built with React and Tailwind CSS featuring interactive project cards and a responsive layout.",
-        "link": "https://clinquant-truffle-910d29.netlify.app/",
-        "tech": ["react", "tailwindcss"]
     },
     {
         "id": 4,
