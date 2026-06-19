@@ -1,6 +1,14 @@
 [
     {
         "id": 1,
+        "imgSrc": "/assets/twitter-jaeger.jpeg",
+        "title": "Twitter Backend Clone",
+        "desc": "Microservices backend in Golang with 4 services communicating over gRPC, Consul for service discovery, RabbitMQ for async event-driven notifications, and distributed tracing via OpenTelemetry/Jaeger.",
+        "link": "https://github.com/Sinanaas/twitter-clone",
+        "tech": ["golang", "postgresql", "mongodb", "redis", "rabbitmq", "consul", "jaeger", "docker"]
+    },
+    {
+        "id": 3,
         "imgSrc": "/assets/gotth.jpg",
         "title": "GOTTH Auction",
         "desc": "Real-time auction website built with Golang, HTMX, and Templ to learn WebSockets in Go.",
@@ -25,22 +33,6 @@
     },
     {
         "id": 4,
-        "imgSrc": "/assets/carbon.png",
-        "title": "Pollution Index Map",
-        "desc": "React + Bootstrap website that lets users monitor the pollution index across Indonesian provinces using the OpenWeather API with longitude/latitude coordinates.",
-        "link": "https://carbon-footprint-c8bqthz3x-orangemangodimz.vercel.app/",
-        "tech": ["react", "bootstrap"]
-    },
-    {
-        "id": 5,
-        "imgSrc": "/assets/sign.jpg",
-        "title": "Linguanesia Python Project",
-        "desc": "AI-powered sign language detector built with Python, MediaPipe, and OpenCV2 for real-time hand gesture recognition. Model trained via Google Teachable Machine.",
-        "link": "https://drive.google.com/drive/folders/1vdO-uUYLS9YHcuAn3U2rGyYjCK_StmJB",
-        "tech": ["python"]
-    },
-    {
-        "id": 6,
         "imgSrc": "/assets/katekima.png",
         "title": "KATEKIMA Project",
         "desc": "Laravel-based inventory management system for a stationery store, built as a Software Engineering course assignment.",
@@ -48,7 +40,7 @@
         "tech": ["laravel"]
     },
     {
-        "id": 7,
+        "id": 5,
         "imgSrc": "/assets/raamen.jpg",
         "title": "RAAMEN Application",
         "desc": "ASP.NET restaurant management system built for a Software Design Patterns course. Supports customer ordering and admin features including transaction reports and menu management.",
@@ -56,19 +48,11 @@
         "tech": ["dot-net"]
     },
     {
-        "id": 8,
+        "id": 6,
         "imgSrc": "/assets/qhealth.jpg",
         "title": "QHealth Java Swing Project",
         "desc": "Java Swing desktop app built for an OOP assignment. Calculates Basal Metabolic Rate (BMR) from user input and returns calorie needs with food recommendations.",
         "link": "https://github.com/fzjourney/Basal-Metabolic-Counter.git",
         "tech": ["java"]
-    },
-    {
-        "id": 9,
-        "imgSrc": "/assets/pokemom.png",
-        "title": "Pokemon Gallery",
-        "desc": "Personal project built with React to explore API consumption using the PokeAPI as a data source.",
-        "link": "https://github.com/Sinanaas/pokemon-gallery",
-        "tech": ["react"]
     }
 ]
