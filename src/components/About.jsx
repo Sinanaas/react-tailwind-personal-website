@@ -1,33 +1,33 @@
 const entries = [
   {
-    period: 'NOV 2025 — MAY 2026',
-    title: 'BACKEND ENGINEER — PT. PARAGON TECHNOLOGY AND INNOVATION',
+    period: 'NOV 2025 - MAY 2026',
+    title: 'BACKEND ENGINEER INTERN - PT. PARAGON TECHNOLOGY AND INNOVATION',
     location: 'Jakarta, Indonesia',
     status: 'ARCHIVED',
     statusStyle: 'bg-surface-container-highest text-outline outline-outline/30',
     dotStyle: 'bg-primary-container',
     bullets: [
-      'Developed and implemented a Product Information Management (PIM) system using Express.js and Sequelize ORM, supporting Paragon\'s omnichannel product data operations.',
-      'Managed and delivered multiple Jira tickets spanning CRON Jobs, database migrations, proxy configuration, authentication, report generation, and CRUD operations.',
-      'Enhanced maintainability by refactoring hardcoded values into enumerations and implementing reusable, modular code patterns.',
+      'Worked on a Product Information Management (PIM) system in Express.js and Sequelize that handles product data for Paragon\'s online marketplaces.',
+      'Built cron jobs, migrations, authentication, and reporting for the multi-department product-approval pipeline; ≥80% of product submissions passed approval within 3 days and rework stayed below 20%.',
+      'Replaced scattered hardcoded values with enums and cleaned up repeated code.',
     ],
   },
   {
-    period: 'FEB 2024 — FEB 2025',
-    title: 'APPLICATION DEVELOPER — PT. ASTRA GRAPHIA INFORMATION TECHNOLOGY',
+    period: 'FEB 2024 - FEB 2025',
+    title: 'APPLICATION DEVELOPER INTERN - PT. ASTRA GRAPHIA INFORMATION TECHNOLOGY',
     location: 'Jakarta, Indonesia',
     status: 'ARCHIVED',
     statusStyle: 'bg-surface-container-highest text-outline outline-outline/30',
     dotStyle: 'bg-primary-container',
     bullets: [
-      'Developed advanced features for an ERP system (Ax365 FO) using X++ and OOP, covering custom forms, SSRS reports, and Chain of Command extensions.',
-      'Provided complex multi-table SQL queries to support the PowerApps testing team.',
-      'Delivered CR Flagging Service Contract (validation & WR-to-WO conversion) and CR Validasi Expire (sorting, visual highlighting, and batch CRON Job for data flagging).',
+      'Built custom features for a Microsoft Dynamics 365 Finance & Operations (D365 F&O) ERP system in X++, using the Chain of Command extension pattern to extend without touching base code.',
+      'Wrote SQL queries to support the PowerApps team during integration testing.',
+      'Shipped several ERP features end-to-end in X++: custom forms, business-rule validation, and a scheduled batch job that flags records automatically.',
     ],
   },
   {
-    period: '2021 — 2025',
-    title: 'COMPUTER SCIENCE — BINA NUSANTARA UNIVERSITY',
+    period: '2021 - 2025',
+    title: 'COMPUTER SCIENCE - BINA NUSANTARA UNIVERSITY',
     location: 'Bandung, Indonesia · GPA 3.71',
     status: 'GRADUATED',
     statusStyle: 'bg-surface-container-highest text-outline outline-outline/30',
@@ -42,15 +42,8 @@ const entries = [
 
 const About = () => {
   return (
-    <section className="bg-surface py-24 px-6 relative overflow-hidden" id="EXPERIENCES">
-      <img
-        src="/assets/Hero_Seven.png"
-        alt=""
-        aria-hidden="true"
-        className="absolute -right-16 bottom-0 h-[90%] object-contain object-bottom opacity-[0.06] pointer-events-none select-none"
-      />
-
-      <div className="max-w-4xl mx-auto relative z-10">
+    <section className="bg-surface py-24 px-6 md:px-12 lg:px-20 relative overflow-hidden" id="EXPERIENCES">
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <div className="flex items-center gap-8 mb-20">
           <div className="h-[2px] flex-grow bg-outline-variant/30" />

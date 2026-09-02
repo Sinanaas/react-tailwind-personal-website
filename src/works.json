@@ -11,7 +11,7 @@
         "id": 2,
         "imgSrc": "/assets/gotth.jpg",
         "title": "GOTTH Auction",
-        "desc": "Real-time auction website built with Golang, HTMX, and Templ to learn WebSockets in Go.",
+        "desc": "Real-time auction platform in Golang supporting concurrent live auctions with instant bid broadcasting over WebSockets. Each auction runs its own goroutine event loop, replaying full bid history to clients joining mid-auction. Built with HTMX and Templ.",
         "link": "https://github.com/Sinanaas/gotth-auction",
         "tech": ["golang", "templ", "tailwindcss", "htmx", "postgresql"]
     },
@@ -22,29 +22,5 @@
         "desc": "Full-stack vehicle rental platform built for a Web Programming final project. Integrated Google OAuth, Midtrans Payment Gateway, and Mailtrap Email Delivery on the backend.",
         "link": "https://dta32-serverdown.pages.dev/",
         "tech": ["react", "laravel", "postgresql", "tailwindcss"]
-    },
-    {
-        "id": 4,
-        "imgSrc": "/assets/katekima.png",
-        "title": "KATEKIMA Project",
-        "desc": "Laravel-based inventory management system for a stationery store, built as a Software Engineering course assignment.",
-        "link": "https://github.com/vincentalexx/KATEKIMA",
-        "tech": ["laravel"]
-    },
-    {
-        "id": 5,
-        "imgSrc": "/assets/raamen.jpg",
-        "title": "RAAMEN Application",
-        "desc": "ASP.NET restaurant management system built for a Software Design Patterns course. Supports customer ordering and admin features including transaction reports and menu management.",
-        "link": "https://github.com/Sinanaas/RAAMEN",
-        "tech": ["dot-net"]
-    },
-    {
-        "id": 6,
-        "imgSrc": "/assets/qhealth.jpg",
-        "title": "QHealth Java Swing Project",
-        "desc": "Java Swing desktop app built for an OOP assignment. Calculates Basal Metabolic Rate (BMR) from user input and returns calorie needs with food recommendations.",
-        "link": "https://github.com/fzjourney/Basal-Metabolic-Counter.git",
-        "tech": ["java"]
     }
 ]
