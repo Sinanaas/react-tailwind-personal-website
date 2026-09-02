@@ -3,7 +3,6 @@ import Topbar from './components/Topbar.jsx';
 import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
-import Contacts from './components/Contacts';
 function App() {
   return (
     <div className="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary min-h-screen">
@@ -20,12 +19,10 @@ function App() {
         <Portfolio />
 
         <About />
-
-        <Contacts />
       </main>
 
       {/* Footer */}
-      <footer className="relative flex flex-col items-center justify-center w-full py-12 px-6 gap-4 bg-surface-container-low border-t-4 border-background overflow-hidden">
+      <footer className="relative flex flex-col items-center justify-center w-full py-12 px-6 md:px-12 lg:px-20 gap-4 bg-surface-container-low border-t-4 border-background overflow-hidden">
         <img
           src="/assets/minimap.png"
           alt=""

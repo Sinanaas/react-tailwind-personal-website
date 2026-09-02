@@ -3,16 +3,16 @@ const soulsIcon = '/assets/Souls.png';
 const spiritIcon = '/assets/Spirit.png';
 
 const skills = {
-  'LANGUAGES': ['Golang', 'Java', 'JavaScript', 'TypeScript', 'SQL', 'X++', 'C'],
-  'BACKEND': ['Express.js', 'Sequelize ORM', 'ASP.NET', 'Laravel', 'Spring Boot', 'Jest', 'PHP'],
-  'FRONTEND': ['React', 'Tailwind CSS', 'Bootstrap', 'HTMX', 'Vue'],
-  'DATABASES': ['PostgreSQL', 'MySQL', 'Microsoft SQL Server'],
-  'TOOLS': ['Git', 'Docker', 'Linux', 'Jira', 'Postman'],
+  'LANGUAGES': ['Golang', 'JavaScript', 'TypeScript', 'Java', 'X++ (Ax365 F&O)'],
+  'BACKEND': ['Express.js', 'gRPC', 'RabbitMQ', 'Consul', 'Jaeger'],
+  'FRONTEND': ['HTML5', 'Tailwind CSS'],
+  'DATABASES': ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'],
+  'TOOLS': ['Docker', 'Nginx', 'AWS', 'Git'],
 };
 
 const Home = () => {
   return (
-    <section className="relative min-h-[100vh] flex flex-col items-center justify-center overflow-hidden px-6 py-20 bg-surface">
+    <section className="relative min-h-[100vh] flex flex-col items-start justify-center overflow-hidden px-6 md:px-12 lg:px-20 py-20 bg-surface">
       {/* Deadlock menu background */}
       <div className="absolute inset-0 z-0">
         <img
@@ -24,27 +24,62 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/75 to-background/40" />
       </div>
 
-      <div className="relative z-10 max-w-5xl w-full flex flex-col gap-6">
+      <div className="relative z-10 max-w-6xl mx-auto w-full flex flex-col gap-6">
           <div className="inline-flex items-center gap-3 py-1 px-3 bg-surface-container-highest border-l-4 border-primary self-start">
             <span className="font-label text-xs tracking-tighter text-primary">
-              BINA NUSANTARA UNIVERSITY — CLASS 2025
+              BINA NUSANTARA UNIVERSITY - CLASS 2025
             </span>
           </div>
 
-          <h1 className="font-headline text-5xl sm:text-7xl md:text-8xl font-extrabold leading-none text-on-surface tracking-tighter italic">
-            BACKEND<br />
-            <span className="text-primary-container">ENGINEER</span>
+          <h1 className="font-headline text-4xl sm:text-6xl md:text-7xl font-extrabold leading-none text-on-surface tracking-tighter italic">
+            MUHAMMAD SINAN<br />
+            <span className="text-primary-container">ABDUSSYAKUR</span>
           </h1>
 
-          <p className="font-body text-xl text-on-surface/80 max-w-xl leading-relaxed">
-            Motivated backend engineer with hands-on experience at PT Paragon Technology and Innovation and PT Astra Graphia Information Technology.
-            Proficient in Golang, Java, SQL, and Express.js — building scalable systems and delivering production-ready features.
+          <p className="font-label text-sm text-primary uppercase tracking-[0.3em]">
+            BACKEND ENGINEER
           </p>
 
-          <div className="flex flex-wrap gap-4 mt-4">
-            <a href="#CONTACT">
+          <p className="font-body text-xl text-on-surface/80 max-w-xl leading-relaxed">
+            I build backend systems. Express (JS/TS) APIs at Paragon, X++ (Ax365 F&O) ERP features at AGIT,
+            and Golang side projects: event-driven microservices on gRPC and RabbitMQ, with PostgreSQL, MongoDB, and Docker.
+          </p>
+
+          {/* Status + social chips */}
+          <div className="flex flex-wrap gap-3">
+            <div className="flex items-center gap-2 bg-surface-container-highest/60 px-3 py-2 border border-outline-variant/20">
+              <img src={soulsIcon} alt="Souls" className="w-5 h-5 object-contain" />
+              <span className="font-label text-[10px] text-primary uppercase tracking-widest">2 INTERNSHIPS</span>
+            </div>
+            <div className="flex items-center gap-2 bg-surface-container-highest/60 px-3 py-2 border border-outline-variant/20">
+              <img src={spiritIcon} alt="Spirit" className="w-5 h-5 object-contain" />
+              <span className="font-label text-[10px] text-primary uppercase tracking-widest">OPEN TO WORK</span>
+            </div>
+            <a
+              href="https://github.com/Sinanaas"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-2 bg-surface-container-highest/60 px-3 py-2 border border-outline-variant/20 hover:border-primary/40 transition-colors"
+            >
+              <i className="devicon-github-original text-primary text-base" />
+              <span className="font-label text-[10px] text-on-surface/70 group-hover:text-primary uppercase tracking-widest transition-colors">GITHUB</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/muhammad-sinan-abdussyakur-836b13201/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-2 bg-surface-container-highest/60 px-3 py-2 border border-outline-variant/20 hover:border-primary/40 transition-colors"
+            >
+              <i className="devicon-linkedin-plain text-primary text-base" />
+              <span className="font-label text-[10px] text-on-surface/70 group-hover:text-primary uppercase tracking-widest transition-colors">LINKEDIN</span>
+            </a>
+          </div>
+
+          {/* Primary actions */}
+          <div className="flex flex-wrap gap-4 mt-2">
+            <a href="mailto:muhammadsinanabdussyakur@gmail.com">
               <button className="bg-gradient-to-r from-primary to-primary-container px-8 py-4 font-label font-bold text-on-primary uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all">
-                CONTACT
+                EMAIL ME
               </button>
             </a>
             <a href="#PORTFOLIO">
@@ -57,18 +92,6 @@ const Home = () => {
                 DOWNLOAD CV
               </button>
             </a>
-          </div>
-
-          {/* Deadlock stat badges */}
-          <div className="flex gap-6 mt-2">
-            <div className="flex items-center gap-2 bg-surface-container-highest/60 px-3 py-2 border border-outline-variant/20">
-              <img src={soulsIcon} alt="Souls" className="w-5 h-5 object-contain" />
-              <span className="font-label text-[10px] text-primary uppercase tracking-widest">2 INTERNSHIPS</span>
-            </div>
-            <div className="flex items-center gap-2 bg-surface-container-highest/60 px-3 py-2 border border-outline-variant/20">
-              <img src={spiritIcon} alt="Spirit" className="w-5 h-5 object-contain" />
-              <span className="font-label text-[10px] text-primary uppercase tracking-widest">OPEN TO WORK</span>
-            </div>
           </div>
 
           {/* Skills strip */}

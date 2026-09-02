@@ -4,7 +4,6 @@ const navLinks = [
   { label: 'ABOUT',       href: '#ABOUT',      id: 'ABOUT' },
   { label: 'PORTFOLIO', href: '#PORTFOLIO', id: 'PORTFOLIO' },
   { label: 'EXPERIENCES',    href: '#EXPERIENCES',     id: 'EXPERIENCES' },
-  { label: 'CONTACTS',  href: '#CONTACT',   id: 'CONTACT' },
 ];
 
 const Topbar = () => {
@@ -43,15 +42,10 @@ const Topbar = () => {
   }, []);
 
   return (
-    <header className="flex justify-between md:grid md:grid-cols-3 items-center w-full px-6 py-4 sticky top-0 z-50 bg-background border-b-2 border-surface-variant">
-      <div className="flex items-center gap-3">
-        <img
-          src="/assets/deadlock-mark.svg"
-          alt="Deadlock mark"
-          className="h-8 w-8 object-contain"
-          style={{ filter: 'brightness(0) saturate(100%) invert(78%) sepia(61%) saturate(568%) hue-rotate(338deg) brightness(102%) contrast(101%)' }}
-        />
-        <span className="text-xl font-black text-primary italic font-headline uppercase tracking-widest hidden sm:block">
+    <header className="w-full px-6 md:px-12 lg:px-20 py-4 sticky top-0 z-50 bg-background border-b-2 border-surface-variant">
+      <div className="max-w-6xl mx-auto flex justify-between md:grid md:grid-cols-3 items-center">
+      <div className="flex items-center">
+        <span className="text-xl font-black text-primary italic font-headline uppercase tracking-widest">
           SINANAAS
         </span>
       </div>
@@ -100,6 +94,7 @@ const Topbar = () => {
           </nav>
         </div>
       )}
+      </div>
     </header>
   );
 };
