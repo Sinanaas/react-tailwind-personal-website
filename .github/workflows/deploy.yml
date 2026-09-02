@@ -1,4 +1,4 @@
-name: Deploy to VPS
+name: Build and Push Image
 
 on:
   push:
@@ -6,22 +6,24 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-push:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Deploy to VPS via SSH
-        uses: appleboy/ssh-action@v1
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
         with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          script: |
-            cd ~/react-tailwind-personal-website
-            git pull origin main
-            docker build -t sinanaas-portfolio .
-            docker stop portfolio
-            docker rm portfolio
-            docker run -d -p 8082:80 --name portfolio sinanaas-portfolio
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GHCR_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ghcr.io/pt-sinan-akbar/sinan-portfolio:${{ github.sha }}
+            ghcr.io/pt-sinan-akbar/sinan-portfolio:latest
