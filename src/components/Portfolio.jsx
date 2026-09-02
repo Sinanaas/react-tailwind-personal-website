@@ -39,7 +39,6 @@ const ItemCard = ({ item, onOpen }) => (
         className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 opacity-50 group-hover:opacity-90"
         style={{ transition: 'transform 700ms ease, filter 700ms ease, opacity 700ms ease', willChange: 'transform, filter, opacity', backfaceVisibility: 'hidden' }}
       />
-      <div className="scanlines absolute inset-0 z-10 pointer-events-none opacity-40" />
       <div className="absolute inset-0 z-10 pointer-events-none" style={{ background: 'linear-gradient(to top, #20201f 0%, transparent 60%)' }} />
       <div className="absolute top-3 left-3 z-20 flex items-center gap-1.5 px-2 py-1 bg-background/80" style={{ borderLeft: '2px solid #ffb95f' }}>
         <img src="/assets/Souls.png" alt="" className="w-3 h-3 object-contain opacity-80" />
@@ -118,8 +117,8 @@ const Portfolio = () => {
   }, [modal]);
 
   return (
-    <section className="bg-surface-container-low py-24 px-6 border-y-4 border-surface" id="PORTFOLIO">
-      <div className="max-w-7xl mx-auto w-full">
+    <section className="bg-surface-container-low py-24 px-6 md:px-12 lg:px-20 border-y-4 border-surface" id="PORTFOLIO">
+      <div className="max-w-6xl mx-auto w-full">
         <div className="mb-16 flex flex-col md:flex-row md:justify-between items-start md:items-end gap-6">
           <div>
             <h2 className="font-headline text-5xl font-bold text-primary mb-2 italic">
@@ -170,7 +169,6 @@ const Portfolio = () => {
                   alt={selected.title}
                   className="w-full h-full object-cover aspect-square md:aspect-auto"
                 />
-                <div className="scanlines absolute inset-0 pointer-events-none opacity-40" />
               </div>
 
               <div className="md:w-1/2 p-8 flex flex-col gap-6">
