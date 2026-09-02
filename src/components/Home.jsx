@@ -48,11 +48,17 @@ const Home = () => {
           {/* Status + social chips */}
           <div className="flex flex-wrap gap-3">
             <div className="flex items-center gap-2 bg-surface-container-highest/60 px-3 py-2 border border-outline-variant/20">
-              <img src={soulsIcon} alt="Souls" className="w-5 h-5 object-contain" />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-primary" aria-hidden="true">
+                <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
+              </svg>
+              <span className="font-label text-[10px] text-primary uppercase tracking-widest">BANDUNG, INDONESIA</span>
+            </div>
+            <div className="flex items-center gap-2 bg-surface-container-highest/60 px-3 py-2 border border-outline-variant/20">
+              <img src={soulsIcon} alt="" className="w-5 h-5 object-contain" />
               <span className="font-label text-[10px] text-primary uppercase tracking-widest">2 INTERNSHIPS</span>
             </div>
             <div className="flex items-center gap-2 bg-surface-container-highest/60 px-3 py-2 border border-outline-variant/20">
-              <img src={spiritIcon} alt="Spirit" className="w-5 h-5 object-contain" />
+              <img src={spiritIcon} alt="" className="w-5 h-5 object-contain" />
               <span className="font-label text-[10px] text-primary uppercase tracking-widest">OPEN TO WORK</span>
             </div>
             <a
@@ -78,7 +84,11 @@ const Home = () => {
           {/* Primary actions */}
           <div className="flex flex-wrap gap-4 mt-2">
             <a href="mailto:muhammadsinanabdussyakur@gmail.com">
-              <button className="bg-gradient-to-r from-primary to-primary-container px-8 py-4 font-label font-bold text-on-primary uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all">
+              <button className="flex items-center gap-2.5 bg-gradient-to-r from-primary to-primary-container px-8 py-4 font-label font-bold text-on-primary uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4" aria-hidden="true">
+                  <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                  <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                </svg>
                 EMAIL ME
               </button>
             </a>
