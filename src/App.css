@@ -1,37 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-
-/* Deadlock — Reaver (headline) */
+/* Deadlock - Reaver (headline) */
 @font-face {
   font-family: 'Reaver';
   src: url('/assets/fonts/reaver-regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Reaver';
   src: url('/assets/fonts/reaver-semibold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Reaver';
   src: url('/assets/fonts/reaver-bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
-/* Deadlock — Valve Oracle (label / mono) */
+/* Deadlock - Valve Oracle (label / mono) */
 @font-face {
   font-family: 'Valve Oracle';
   src: url('/assets/fonts/valveoracle-medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Valve Oracle';
   src: url('/assets/fonts/valveoracle-semibold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 * {

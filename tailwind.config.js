@@ -61,9 +61,9 @@ export const theme = {
       full: "9999px",
     },
     fontFamily: {
-      headline: ["Rock N Roll One", "Reaver", "Newsreader", "serif"],
+      headline: ["Reaver", "serif"],
       body: ["Work Sans", "sans-serif"],
-      label: ["Valve Oracle", "Space Grotesk", "monospace"],
+      label: ["Valve Oracle", "monospace"],
     },
   },
 };
